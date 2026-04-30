@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import Icon from '@/components/ui/icon';
 import { Button } from '@/components/ui/button';
 import {
@@ -63,7 +64,7 @@ const Index = () => {
           <NavigationMenu className="hidden lg:flex">
             <NavigationMenuList className="gap-1">
               <NavigationMenuItem>
-                <NavigationMenuLink className="px-3 py-2 text-sm hover:opacity-60 transition" href="#about">Обо мне</NavigationMenuLink>
+                <Link to="/about" className="px-3 py-2 text-sm hover:opacity-60 transition">Обо мне</Link>
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <NavigationMenuTrigger className="text-sm bg-transparent">Услуги</NavigationMenuTrigger>
