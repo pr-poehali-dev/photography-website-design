@@ -70,11 +70,10 @@ const Index = () => {
                 <NavigationMenuTrigger className="text-sm bg-transparent">Услуги</NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="grid w-[260px] gap-1 p-3 bg-[#FBFAF7]">
-                    {['Виды фотосъёмок', 'Прайс', 'Портфолио', 'Отзывы'].map((s) => (
-                      <li key={s}>
-                        <NavigationMenuLink className="block px-3 py-2 text-sm rounded hover:bg-neutral-100 transition" href="#services">{s}</NavigationMenuLink>
-                      </li>
-                    ))}
+                    <li><NavigationMenuLink asChild><Link to="/services/types" className="block px-3 py-2 text-sm rounded hover:bg-neutral-100 transition">Виды фотосъёмок</Link></NavigationMenuLink></li>
+                    <li><NavigationMenuLink asChild><Link to="/services/pricing" className="block px-3 py-2 text-sm rounded hover:bg-neutral-100 transition">Прайс</Link></NavigationMenuLink></li>
+                    <li><NavigationMenuLink asChild><Link to="/services/portfolio" className="block px-3 py-2 text-sm rounded hover:bg-neutral-100 transition">Портфолио</Link></NavigationMenuLink></li>
+                    <li><NavigationMenuLink asChild><Link to="/services/reviews" className="block px-3 py-2 text-sm rounded hover:bg-neutral-100 transition">Отзывы</Link></NavigationMenuLink></li>
                   </ul>
                 </NavigationMenuContent>
               </NavigationMenuItem>
