@@ -81,11 +81,10 @@ const Index = () => {
                 <NavigationMenuTrigger className="text-sm bg-transparent">Курсы</NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="grid w-[260px] gap-1 p-3 bg-[#FBFAF7]">
-                    {['Курс «Стань фотографом»', 'Фотопозирование', 'Практикумы', 'Отзывы'].map((s) => (
-                      <li key={s}>
-                        <NavigationMenuLink className="block px-3 py-2 text-sm rounded hover:bg-neutral-100 transition" href="#courses">{s}</NavigationMenuLink>
-                      </li>
-                    ))}
+                    <li><NavigationMenuLink asChild><Link to="/courses/photographer" className="block px-3 py-2 text-sm rounded hover:bg-neutral-100 transition">Курс «Стань фотографом»</Link></NavigationMenuLink></li>
+                    <li><NavigationMenuLink asChild><Link to="/courses/posing" className="block px-3 py-2 text-sm rounded hover:bg-neutral-100 transition">Фотопозирование</Link></NavigationMenuLink></li>
+                    <li><NavigationMenuLink asChild><Link to="/courses/workshops" className="block px-3 py-2 text-sm rounded hover:bg-neutral-100 transition">Практикумы</Link></NavigationMenuLink></li>
+                    <li><NavigationMenuLink asChild><Link to="/courses/reviews" className="block px-3 py-2 text-sm rounded hover:bg-neutral-100 transition">Отзывы</Link></NavigationMenuLink></li>
                   </ul>
                 </NavigationMenuContent>
               </NavigationMenuItem>
